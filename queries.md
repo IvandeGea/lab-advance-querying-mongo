@@ -111,9 +111,9 @@ limit:10
 
 <!-- Your Code Goes Here -->
 
-{$and:[{category_code:"web"},{number_of_employees:{$gt:4000}}]}
+Filter : {$and:[{category_code:"web"},{number_of_employees:{$gt:4000}}]}
 
-{number_of_employees:1}
+Sort: {number_of_employees:1}
 
 ### 17. All the companies whose acquisition amount is more than 10.000.000, and currency is 'EUR'.
 
@@ -133,4 +133,4 @@ Limit:10
 
 <!-- Your Code Goes Here -->
 
-{$and:[{founded_year:{$gte:2000}},{founded_year:{$lt:2010}},{"acquisition.acquired_year":{$gte:2010}}]}
+Filter: {$and:[{founded_year:{$gte:2000}},{founded_year:{$lt:2010}},{"acquisition.acquired_year":{$gte:2010}}]}
